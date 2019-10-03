@@ -1,60 +1,90 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+	<title>Mobile Planning App</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
-
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
+    
+<!-- Start of first page -->
+<div data-role="page" id="home">
+
+    <div data-role="panel" data-display="overlay" data-theme="b" id="menuPanel">
+
+    </div><!-- /panel -->
+
+	<div role="main" class="ui-content">
+		<h1>Welcome!</h1>
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="goals">
+
+	<div data-role="header" data-theme="f">
+		<h1>GeoShopping</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	</div><!-- /content -->
+</div><!-- /page -->
+    
+<!-- Start of third page -->
+<div data-role="page" id="users">
+
+	<div data-role="header" data-theme="f">
+		<h1>Potential Users</h1>
+	</div><!-- /header -->
+	<div role="main" class="ui-content">
+
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of fourth page -->
+<div data-role="page" id="mock">
+
+	<div data-role="header" data-theme="f" data-position="fixed">
+		<h1>Mock Screens</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	</div><!-- /content -->
+</div><!-- /page -->    
+    
+    <!-- Start of fifth page -->
+<div data-role="page" id="comparison">
+
+	<div data-role="header" data-theme="f">
+		<h1>Comparison</h1>
+	</div><!-- /header -->
+  	<div role="main" class="ui-content">
+	</div><!-- /content -->
+
+</div><!-- /page -->  
+
+    <!-- Start of Sixth page -->
+<div data-role="page" id="tech">
+
+	<div data-role="header" data-theme="f">
+		<h1>Challanges</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	</div><!-- /content -->
+
+</div><!-- /page --> 
+        <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
 </body>
-
 </html>

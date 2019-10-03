@@ -1,1 +1,1 @@
-Project Test Repo
+Project GeoShopping Plan
