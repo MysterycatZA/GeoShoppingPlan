@@ -8,23 +8,86 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </head>
+<style>
+.ui-footer .ui-btn-right {
+    right: 35px !important
+}
+.ui-bar-f {
+    color: green;
+    background-color: lightgrey;
+}    
+
+.screen {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    background-color: #FFFFFF;
+}
+
+.slider {
+  height: 100%;
+}
+.slider div {
+  height: 100%;
+}
+
+.slider__item {
+    font-size: 100px;
+    color: rgba(255,255,255,0.7);    
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__item--1 {
+   background-image: url(img/img1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.slider__item--2 {
+     background-image: url(img/img2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.slider__item--3 {
+    background-image: url(img/img3.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.slider__item--4 {
+    background-image: url(img/img4.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.slider__item--5 {
+    background-image: url(img/img5.JPG);
+    background-size: cover;
+    background-position: center;
+}
+    
+    </style>    
 <body>
     
 <!-- Start of first page -->
 <div data-role="page" id="home">
-
-    <div data-role="panel" data-display="overlay" data-theme="b" id="menuPanel">
-
-    </div><!-- /panel -->
+    
+	<div data-role="header" data-theme="f">
+		<h1>GeoShopping</h1>
+	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
 		<h1>Welcome!</h1>
+        <p>Please use the menu navigation bar to navigate to the various parts of the app. Alternatively you can also click the start tour button below.</p>
 		
 	</div><!-- /content -->
 
+	<div data-role="footer" data-theme="f" data-position="fixed">    
+	</div><!-- /footer -->
 </div><!-- /page -->
-
 <!-- Start of second page -->
 <div data-role="page" id="goals">
 
@@ -55,6 +118,25 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
+      <div class="screen">
+        <div class="slider">
+          <div class="slider__item slider__item--1">
+          
+          </div>
+          <div class="slider__item slider__item--2">
+        
+          </div>
+          <div class="slider__item slider__item--3">
+   
+          </div>
+          <div class="slider__item slider__item--4">
+   
+          </div>
+          <div class="slider__item slider__item--5">
+   
+          </div>
+        </div>
+      </div>
 	</div><!-- /content -->
 </div><!-- /page -->    
     
