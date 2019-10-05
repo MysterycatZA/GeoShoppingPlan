@@ -74,8 +74,20 @@
     
 <!-- Start of first page -->
 <div data-role="page" id="home">
+
+    <div data-role="panel" data-display="overlay" data-theme="b" id="menuPanel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#home" data-rel="close">Close menu</a></li> 
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#mock">Mock Pages</a></li>
+            <li><a href="#comparison">Comparison</a></li>
+            <li><a href="#tech">Challanges</a></li>
+        </ul>
+    </div><!-- /panel -->
     
 	<div data-role="header" data-theme="f">
+        <a href="#menuPanel" data-role="button" data-icon="bars">Menu</a>
 		<h1>GeoShopping</h1>
 	</div><!-- /header -->
 
@@ -85,9 +97,11 @@
 		
 	</div><!-- /content -->
 
-	<div data-role="footer" data-theme="f" data-position="fixed">    
+	<div data-role="footer" data-theme="f" data-position="fixed">
+        <a href="#goals" data-role="button" data-icon="forward">Start Tour</a>        
 	</div><!-- /footer -->
 </div><!-- /page -->
+    
 <!-- Start of second page -->
 <div data-role="page" id="goals">
 
