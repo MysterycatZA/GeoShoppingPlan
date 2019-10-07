@@ -106,14 +106,29 @@
 <div data-role="page" id="goals">
 
 	<div data-role="header" data-theme="f">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
 		<h1>GeoShopping</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
+        <h1>Goal of the final App</h1>
+        <h1>Purpose</h1>
+		<p>The purpose of this mock planning application is to introduce the concept of a particular shopping app. Primarily this app, Geo – shopping, which combines a typical shopping list app with the ability to get buzz notifications when near a shop that was marked earlier via the combination of GPS location and Geofences.</p>
+        <h1>Goals</h1>
+        <p>The main goals of the app are the following:</p>
+        <ul>
+            <li>Creation of items for a shopping list</li>
+            <li>Able to search shops using google maps and save their location</li>
+            <li>Using Geolocation to get the apps position</li>
+            <li>Send a buzz notification reminder when app reaches marked shop location via Geofences</li>
+            <li>Mark off items from the shopping list as they are bought</li>
+        </ul>
+        <p>The overall goal of this is to reduce the need to remind oneself to find your shopping list when you get to the shops.</p>
 	</div><!-- /content -->
-    	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
-        <a href="#goals" class="ui-btn-left" data-role="button" data-icon="arrow-l">Goals</a>     
-        <a href="#mock" class="ui-btn-right" data-role="button" data-icon="arrow-r">Mock</a>    
+
+	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
+        <a href="#home" class="ui-btn-left" data-role="button" data-icon="arrow-l">Home</a>     
+        <a href="#users" class="ui-btn-right" data-role="button" data-icon="arrow-r">User</a>     
 	</div><!-- /footer -->
 </div><!-- /page -->
     
@@ -121,12 +136,43 @@
 <div data-role="page" id="users">
 
 	<div data-role="header" data-theme="f">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
 		<h1>Potential Users</h1>
 	</div><!-- /header -->
 	<div role="main" class="ui-content">
+        <h1>User</h1>
+            <h1>Description</h1>
+		<p>For this user they are a mother who must provide food for her family. She constantly forgets her shopping list behind, either at home or in the car. This constantly frustrates her as she never remembers the full shopping list. I will list below some tasks that she may perform when using this app.</p>
+          <h1>Task 1</h1>
+            <p>In this task the user will create a shopping list:</p>
+        <ul>
+            <li>Tap the add item below which will bring up the add item screen</li>
+            <li>The user will type the name and amount of the item they wish to add to their shopping list.</li>
+            <li>App will bring them back to the home screen.</li>
+            <li>This previous three steps will be repeated until the shopping list is done.</li>
+            <li>Close the app.</li>
+        </ul>
+        <h1>Task 2</h1>
+        <p>Add shop to buzz notification:</p>
+        <ul>
+            <li>Tap the menu button to bring up the menu and select the shop button.</li>
+            <li>The user will be presented with a Google Maps screen where they can enter their desired shop.</li>
+            <li>Once the user has selected their desired shop, a confirmation dialog will show confirming on their selection.</li>
+            <li>Get returned to the main screen.</li>
+            <li>Close the app.</li>
+        </ul>
+        <h1>Task 3</h1>
+        <p>Get buzz notification:</p>
+        <ul>
+            <li>With the phones GPS on, the user should get a buzz notification popup when they get close to their selected shop.</li>
+            <li>User will click the notification and be brought straight into the app with their list open.</li>
+            <li>User can proceed to tick off items as they buy.</li>
+            <li>Close the app when done.</li>
+        </ul>
 
 	</div><!-- /content -->
-    	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
+
+	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
         <a href="#goals" class="ui-btn-left" data-role="button" data-icon="arrow-l">Goals</a>     
         <a href="#mock" class="ui-btn-right" data-role="button" data-icon="arrow-r">Mock</a>    
 	</div><!-- /footer -->
@@ -136,6 +182,7 @@
 <div data-role="page" id="mock">
 
 	<div data-role="header" data-theme="f" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
 		<h1>Mock Screens</h1>
 	</div><!-- /header -->
 
@@ -160,11 +207,12 @@
         </div>
       </div>
 	</div><!-- /content -->
-    	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
+
+	<div data-role="footer" class="ui-bar" data-theme="f" style="height:50px" data-position="fixed">
         <a href="#users" class="ui-btn-left" data-role="button" data-icon="arrow-l">User</a>     
         <a href="#comparison" class="ui-btn-right" data-role="button" data-icon="arrow-r">Comparison</a> 
 	</div><!-- /footer -->
-</div><!-- /page -->    
+</div><!-- /page --> 
     
     <!-- Start of fifth page -->
 <div data-role="page" id="comparison">
